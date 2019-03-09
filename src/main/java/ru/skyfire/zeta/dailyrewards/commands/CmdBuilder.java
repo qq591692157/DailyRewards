@@ -29,7 +29,7 @@ public class CmdBuilder {
                 .executor(new CmdDailySetStatus())
                 .build();
         CommandSpec dailyInfo = CommandSpec.builder()
-                .permission("dailyrewards.admin")
+                .permission("dailyrewards.info")
                 .description(Text.of("Command to look info about player"))
                 .arguments(GenericArguments.optionalWeak(GenericArguments.player(Text.of("player"))))
                 .executor(new CmdDailyInfo())
